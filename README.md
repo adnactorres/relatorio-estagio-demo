@@ -40,6 +40,23 @@ Regras que defini para ele:
 - Perguntar quando falta informação e pedir confirmação antes de salvar.
 - Nunca dizer que mudou a página.
 
+### Um mascote com personalidade
+
+O Bit não é só o chat: é um personagem, um banco de dados azul de três discos segurando um gráfico, que vive no cabeçalho e reage ao que acontece na página.
+
+- **Muda ao longo do dia e do ano:** toma cafezinho no começo do expediente, dorme à noite, fica preocupado quando o dia tem bloqueio e ganha versões de Halloween, Natal, Ano Novo e aniversário.
+- **Reage ao que é registrado:** comemora com confete quando um dia é salvo, fica triste quando um erro é anotado e acompanha o preenchimento do formulário de um cantinho da tela.
+- **Tem um easter egg** para quem clicar nele várias vezes seguidas.
+
+Por que ter um mascote em uma ferramenta de trabalho:
+
+- **Registrar o dia vira um hábito mais leve.** Um diário só funciona se for preenchido todo dia, e uma reação simpática ao salvar ajuda nisso.
+- **O retorno é imediato e não interrompe.** O Bit mostra que algo foi salvo ou que um bloqueio foi registrado sem abrir janelas.
+- **O agente tem um rosto.** Quem conversa no chat é o mesmo personagem que reage na página, então fica claro quem está respondendo.
+- **É divertido.** Uma ferramenta usada todo dia pode ter um pouco de alegria.
+
+As animações são desligadas para quem configurou o sistema para reduzir movimento, e as versões temáticas mudam só a aparência: as respostas do Bit continuam limitadas aos dados do relatório. Todas as versões aparecem lado a lado na página **O Bit**.
+
 ### Testes do Bit
 
 A página **O Bit** traz nove casos de teste, um para cada regra. Ao rodar, cada caso é enviado ao Bit na conversa, ao vivo, e a página confere a resposta e a ferramenta chamada. Durante os testes, as ferramentas rodam em modo de ensaio e não gravam nada.
