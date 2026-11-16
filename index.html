@@ -953,6 +953,12 @@ body.t-live .mascot{width:76px;height:76px}
 .bc-m.tnote.fail{color:#C8324B;border-color:#C8324B}
 :root[data-theme="dark"] .bc-m.tnote.ok{color:#6FD4A0;border-color:#6FD4A0}
 :root[data-theme="dark"] .bc-m.tnote.fail{color:#FF9A8F;border-color:#FF9A8F}
+header.top p.intro{margin-top:12px;color:var(--ink);font-size:15px;font-weight:400;line-height:1.5;max-width:52ch}
+.bitcta{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:999px;padding:8px 16px;background:var(--accent);color:var(--accent-ink);font:600 13px var(--f-body);cursor:pointer;white-space:nowrap}
+.bitcta::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.85}
+.bitcta:hover{filter:brightness(1.08)}
+.bitcta:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+body.on-cad .bitcta{visibility:hidden}
 </style>
 </head>
 <body>
@@ -965,6 +971,7 @@ body.t-live .mascot{width:76px;height:76px}
     <h1>Ana Lima</h1>
     <p class="role">Testes de Software | QA</p>
     <p>Aurora Sistemas Educacionais (empresa fictícia)</p>
+    <p class="intro">Relatório diário de uma estagiária de QA, com o Bit, um agente de IA que responde sobre os registros, cria lembretes e registra o dia por conversa.</p>
   </div>
   <div class="top-side">
     <button class="theme" id="themeBtn" type="button">Tema</button>
@@ -1082,6 +1089,7 @@ body.t-live .mascot{width:76px;height:76px}
       <path class="sweat" d="M78 44 q3 5 0 8 q-3 -3 0 -8z" fill="#7CC4FF"/>
       <g class="zzz" fill="var(--m-lid)" font-family="Geist, sans-serif" font-weight="700"><text x="80" y="24" font-size="10">z</text><text x="88" y="14" font-size="8">z</text><text x="95" y="6" font-size="6">z</text></g>
     </svg></button></div>
+    <button type="button" class="bitcta" id="bitCta">Conversar com o Bit</button>
   </div>
 </header>
 <div class="demo-note" role="note"><b>Versão de demonstração.</b> Empresa, clientes, pessoas e registros são fictícios, e as datas acompanham o dia de hoje. Você pode cadastrar dias, criar lembretes e conversar com o Bit: nada é salvo, tudo volta ao estado inicial ao recarregar. O relatório real usa o Claude para resumir os dias e responder no chat do Bit.<div class="demo-about"><b>Sobre este projeto</b><a href="#sobre" data-go="sobre">Como foi feito</a><a href="#bit" data-go="bit">O Bit</a><a href="#sql" data-go="sql">SQL</a><a href="#futuro" data-go="futuro">Próximas automações</a></div></div>
@@ -3022,6 +3030,7 @@ window.BIT={
 };
 
 document.addEventListener("keydown",function(e){if(e.key==="Escape"&&BC.open)bcClose()});
+if($("bitCta"))$("bitCta").onclick=function(){$("mascotBtn").click()};
 document.addEventListener("pointerdown",function(e){if(!BC.open)return;var p=$("bitChat"),b=$("mascotBtn");if(p&&!p.contains(e.target)&&!(b&&b.contains(e.target)))bcClose()});
 window.RELAT={chatOk:bcOk,chatToggle:bcToggle,get DSLOTS(){return DSLOTS},get EVS(){return EVS},get HOJE(){return HOJE},get BYD(){return BYD},get DIAS(){return DIAS}};
 })();
