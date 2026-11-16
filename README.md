@@ -9,7 +9,7 @@ Versão de demonstração do relatório interativo que eu uso no meu estágio em
 ## O problema
 
 - Meu relatório diário era um texto corrido, difícil de ler e de acompanhar ao longo das semanas.
-- Trabalho em ordens de serviço de squads diferentes, com dailies em horários próximos. Toda manhã eu precisava descobrir de qual participar e montar o que dizer.
+- Trabalho em ordens de serviço (OS) de squads diferentes, com dailies em horários próximos. Toda manhã eu precisava descobrir de qual participar e planejar o meu reporte para cada OS.
 - Para achar um registro antigo (um erro, um cliente, uma tarefa validada) eu precisava reler tudo.
 
 ## O que o relatório faz
