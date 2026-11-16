@@ -18,9 +18,10 @@ Versão de demonstração do relatório interativo que eu uso no meu estágio em
 | --- | --- |
 | Resumo | Agenda do dia com as dailies, indicação de qual participar pela OS do dia anterior, resumo do último dia, bloqueios, números do estágio e calendário |
 | Diário | Um cartão por dia, com busca e filtros por time, cliente e tipo de atividade |
-| Cadastro | Formulário que identifica clientes, OS e tipo de atividade a partir do texto |
 | Clientes | Dias trabalhados por cliente e por ordem de serviço |
+| Dados do estágio | Informações do termo de compromisso e dos módulos do sistema |
 | Acadêmico | Provas e prazos da faculdade |
+| Botão + | Cadastra um dia, por formulário que identifica clientes, OS e tipo de atividade a partir do texto, ou cria um lembrete. Também dá para clicar em um dia vazio do calendário. |
 
 ## O Bit, o agente da página
 
