@@ -1,0 +1,38 @@
+name: Testes Cypress
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cypress:
+    name: Cypress (${{ matrix.tela }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - tela: computador
+            config: viewportWidth=1280,viewportHeight=900
+          - tela: celular
+            config: viewportWidth=390,viewportHeight=844
+    env:
+      TZ: America/Fortaleza
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rodar os testes
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          config: ${{ matrix.config }}
+
+      - name: Guardar prints das falhas
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prints-${{ matrix.tela }}
+          path: cypress/screenshots
+          if-no-files-found: ignore
