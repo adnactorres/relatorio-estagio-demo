@@ -33,7 +33,7 @@ describe("Agenda", () => {
       .and("contain", "UFVS · 15");
   });
 
-  it("adiciona e remove um lembrete", () => {
+  it("adiciona um lembrete e só remove depois de confirmar", () => {
     const daqui3dias = new Date(Date.now() + 3 * 864e5);
     const data = [
       daqui3dias.getFullYear(),
@@ -55,8 +55,14 @@ describe("Agenda", () => {
       cy.contains("#agn .agn-row", "Revisar casos de teste")
         .should("contain", "16h00")
         .find("[aria-label='Remover lembrete']")
-        .click({ force: true });
+        .as("remover")
+        .click();
 
+      // O primeiro clique só pede confirmação
+      cy.get("@remover").should("have.text", "Remover?");
+      cy.get("#agn .agn-row").should("have.length", antes + 1);
+
+      cy.contains("#agn .agn-row", "Revisar casos de teste").find(".agn-del").click();
       cy.get("#agn .agn-row").should("have.length", antes);
       cy.get("#agn").should("not.contain", "Revisar casos de teste");
     });

@@ -2,12 +2,12 @@ describe("Bit, o agente do relatório", () => {
   beforeEach(() => cy.abrirRelatorio());
 
   it("abre o chat ao clicar no Bit e fecha com Esc", () => {
-    cy.get("#bitChat").should("not.be.visible");
+    cy.get("#bitChat:visible").should("not.exist");
     cy.get("#mascotBtn").click();
     cy.get("#bitChat").should("be.visible").and("have.attr", "role", "dialog");
     cy.get("#bcTxt").should("be.focused");
-    cy.get("body").type("{esc}");
-    cy.get("#bitChat").should("not.be.visible");
+    cy.get("#bcTxt").type("{esc}");
+    cy.get("#bitChat:visible").should("not.exist");
   });
 
   it("responde com os números do relatório", () => {

@@ -37,7 +37,7 @@ describe("Cadastro de um dia", () => {
       const data = id.replace("d-", "");
       cy.get("#fabBtn").click();
       cy.get("[data-fab=dia]").click();
-      cy.get("#f-d").type(data);
+      cy.get("#f-d").clear().type(data).trigger("change");
       cy.get("#saveStatus").should("have.text", "Registro deste dia carregado para edição.");
       cy.get("#f-txt").should("contain", "Validei a tarefa 5 da UFVS 15");
 
