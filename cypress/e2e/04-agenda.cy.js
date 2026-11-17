@@ -52,17 +52,16 @@ describe("Agenda", () => {
       cy.get("#evStatus").should("have.text", "Lembrete salvo.");
 
       cy.get("#agn .agn-row").should("have.length", antes + 1);
-      cy.contains("#agn .agn-row", "Revisar casos de teste")
-        .should("contain", "16h00")
-        .find("[aria-label='Remover lembrete']")
-        .as("remover")
-        .click();
+      const linha = () => cy.contains("#agn .agn-row", "Revisar casos de teste");
+      linha().should("contain", "16h00");
 
-      // O primeiro clique só pede confirmação
-      cy.get("@remover").should("have.text", "Remover?");
+      // A Agenda é redesenhada a cada clique, então o botão é buscado de novo em cada passo.
+      // O primeiro clique só pede confirmação.
+      linha().find(".agn-del").click();
+      linha().find(".agn-del").should("have.text", "Remover?");
       cy.get("#agn .agn-row").should("have.length", antes + 1);
 
-      cy.contains("#agn .agn-row", "Revisar casos de teste").find(".agn-del").click();
+      linha().find(".agn-del").click();
       cy.get("#agn .agn-row").should("have.length", antes);
       cy.get("#agn").should("not.contain", "Revisar casos de teste");
     });

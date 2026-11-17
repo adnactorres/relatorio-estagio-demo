@@ -1,5 +1,7 @@
 # Relatório de Estágio com IA (demo)
 
+[![Testes Cypress](https://github.com/adnactorres/relatorio-estagio-demo/actions/workflows/cypress.yml/badge.svg)](https://github.com/adnactorres/relatorio-estagio-demo/actions/workflows/cypress.yml)
+
 Versão de demonstração do relatório interativo que eu uso no meu estágio em testes de software (QA). Ele registra o dia a dia, prepara a daily e tem um agente de IA, o **Bit**, que responde perguntas sobre os registros e executa ações na página.
 
 **Ver funcionando:** https://adnactorres.github.io/relatorio-estagio-demo/
@@ -16,8 +18,9 @@ Versão de demonstração do relatório interativo que eu uso no meu estágio em
 
 | Área | O que tem |
 | --- | --- |
-| Resumo | Agenda do dia com as dailies, indicação de qual participar pela OS do dia anterior, resumo do último dia, bloqueios, números do estágio e calendário |
-| Diário | Um cartão por dia, com busca e filtros por time, cliente e tipo de atividade |
+| Agenda | Compromissos de hoje com as dailies e a indicação de qual participar pela OS do dia anterior, próximos dias e o meu reporte para a daily, agrupado por squad. Quando não sabe de qual squad é uma OS, a página pergunta. |
+| Diário | Um cartão por dia, com busca e filtros por time, cliente e tipo de atividade, em lista ou em calendário |
+| Indicadores | Números do estágio: dias registrados, clientes, erros, melhorias e bloqueios |
 | Clientes | Dias trabalhados por cliente e por ordem de serviço |
 | Dados do estágio | Informações do termo de compromisso e dos módulos do sistema |
 | Acadêmico | Provas e prazos da faculdade |
@@ -71,15 +74,40 @@ No relatório real, quem responde no chat e resume os dias é o Claude. Aqui no 
 - **SQL:** os dados do diário em cinco tabelas, com consultas prontas e um campo para escrever um `SELECT`.
 - **Próximas automações:** duas automações projetadas (agenda do Google Workspace e painel de validação a partir do Jira) e um protótipo que classifica os erros do diário e gera um checklist de revisão.
 
+## Testes automatizados (Cypress)
+
+Além dos testes do Bit, a página inteira tem testes end-to-end em [Cypress](https://www.cypress.io/). Eles rodam no GitHub Actions a cada mudança, em tela de computador e de celular, e o selo no topo deste README mostra se estão passando.
+
+| Arquivo | O que verifica |
+| --- | --- |
+| `01-navegacao` | Cada aba mostra só o seu painel, os links do topo abrem as páginas de bastidores e o aviso de demonstração abre e fecha |
+| `02-diario` | Ordem dos dias, busca, chips de tipo, filtros de time e cliente, botão Limpar, expandir e recolher, troca para o calendário |
+| `03-cadastro` | Detecção de cliente, squad e tipo pelo texto, salvar um dia novo, editar um dia existente sem duplicar, data obrigatória e nada salvo ao recarregar |
+| `04-agenda` | Daily indicada pela OS do dia anterior, reporte agrupado por squad, pergunta do squad de uma OS desconhecida, lembrete que só é removido depois de confirmar |
+| `05-bit` | Chat abre e fecha com Esc, responde com os números do relatório e os testes da página do Bit passam |
+| `06-sql-e-checklist` | Consultas prontas, recusa de comandos que não são `SELECT` e checklist gerado a partir dos erros |
+| `07-tema-e-celular` | Tema escuro e lembrado ao recarregar, sem rolagem horizontal no celular |
+
+Como as datas da demo acompanham o dia de hoje, os testes não usam datas fixas: leem a data da própria página.
+
 ## Como rodar
 
 É um único arquivo. Baixe o `index.html` e abra no navegador, ou acesse o link do GitHub Pages acima. Não precisa instalar nada.
+
+Para rodar os testes na sua máquina (precisa do [Node.js](https://nodejs.org/)):
+
+```bash
+npm install
+npm test          # roda todos os testes no terminal
+npm run cy:open   # abre o Cypress para ver os testes rodando
+```
 
 ## Como foi construído
 
 Construí o relatório com o Claude, por desenvolvimento assistido por IA: eu levantei o problema, defini os requisitos e as regras do Bit, testei cada entrega e pedi as correções; o Claude escreveu o código.
 
 - HTML, CSS e JavaScript, sem framework
+- Cypress e GitHub Actions para os testes end-to-end
 - [AlaSQL](https://github.com/AlaSQL/alasql) (licença MIT) para as consultas SQL no navegador
 - Claude como modelo do agente e dos resumos na versão real
 
