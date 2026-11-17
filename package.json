@@ -1,0 +1,14 @@
+{
+  "name": "relatorio-estagio-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo do relatório de estágio com testes end-to-end em Cypress",
+  "scripts": {
+    "cy:open": "cypress open --e2e",
+    "test": "cypress run --e2e",
+    "test:mobile": "cypress run --e2e --config viewportWidth=390,viewportHeight=844"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
