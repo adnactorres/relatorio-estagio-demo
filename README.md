@@ -90,6 +90,14 @@ Além dos testes do Bit, a página inteira tem testes end-to-end em [Cypress](ht
 
 Como as datas da demo acompanham o dia de hoje, os testes não usam datas fixas: leem a data da própria página.
 
+## Análise em Python
+
+Na pasta [`analise/`](analise) há um notebook que analisa os dias do diário com **pandas** e **matplotlib**: como o tempo se divide entre os tipos de atividade, em quais clientes aparecem mais erros por dia trabalhado, como os erros mudam ao longo das semanas e que tipo de erro é mais comum.
+
+![Erros por cliente](analise/graficos/3-erros-por-cliente.png)
+
+O notebook roda do começo ao fim no GitHub Actions a cada mudança na pasta.
+
 ## Como rodar
 
 É um único arquivo. Baixe o `index.html` e abra no navegador, ou acesse o link do GitHub Pages acima. Não precisa instalar nada.
@@ -108,6 +116,7 @@ Construí o relatório com o Claude, por desenvolvimento assistido por IA: eu le
 
 - HTML, CSS e JavaScript, sem framework
 - Cypress e GitHub Actions para os testes end-to-end
+- Python, pandas e matplotlib para a análise do diário
 - [AlaSQL](https://github.com/AlaSQL/alasql) (licença MIT) para as consultas SQL no navegador
 - Claude como modelo do agente e dos resumos na versão real
 

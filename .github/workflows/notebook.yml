@@ -1,0 +1,24 @@
+name: Notebook de análise
+
+on:
+  push:
+    branches: [main]
+    paths: ["analise/**", ".github/workflows/notebook.yml"]
+  pull_request:
+    paths: ["analise/**", ".github/workflows/notebook.yml"]
+  workflow_dispatch:
+
+jobs:
+  executar:
+    name: Executar o notebook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependências
+        run: pip install -r analise/requirements.txt
+      - name: Executar do começo ao fim
+        working-directory: analise
+        run: jupyter nbconvert --to notebook --execute analise_diario.ipynb --output /tmp/executado.ipynb
