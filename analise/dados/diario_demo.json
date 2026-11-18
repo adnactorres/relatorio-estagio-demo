@@ -1,0 +1,933 @@
+{
+ "descricao": "Dados FICTÍCIOS da demo do relatório de estágio (nomes, clientes e situações inventados).",
+ "tipos": {
+  "T": "Treinamento",
+  "V": "Validação",
+  "I": "Implantação",
+  "R": "Reuniões",
+  "M": "Melhorias sugeridas",
+  "A": "Administrativo",
+  "W": "Workshop",
+  "B": "Bloqueios"
+ },
+ "times": {
+  "on": "Onboarding",
+  "cu": "Customização",
+  "im": "Implantação"
+ },
+ "dias": [
+  {
+   "d": "2026-09-29",
+   "p": "on",
+   "t": "Integração e cultura da empresa",
+   "tags": [
+    "T",
+    "A"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Onboarding institucional com Helena (RH): história da empresa, valores e organograma.",
+    "Recebi o kit de boas-vindas e configurei o e-mail corporativo."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-09-30",
+   "p": "on",
+   "t": "Ambiente de trabalho e treinamentos iniciais",
+   "tags": [
+    "T",
+    "A"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Estação de trabalho configurada pela infraestrutura e apresentação às equipes de requisitos, desenvolvimento e testes.",
+    "Início da trilha obrigatória: Manual do Colaborador e Segurança da Informação."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-01",
+   "p": "on",
+   "t": "Scrum, Kanban e ferramentas",
+   "tags": [
+    "T"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Módulos de metodologias ágeis: Scrum, Kanban, dailies e OKRs.",
+    "Treinamento de Jira e acesso ao wiki com a documentação da empresa."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-02",
+   "p": "on",
+   "t": "Apresentação dos módulos do sistema",
+   "tags": [
+    "T",
+    "R"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Apresentações negocial e técnica do Portal Acadêmico e do módulo Financeiro.",
+    "Reunião com Lívia (gerente de operações) sobre o código de cultura do time."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-05",
+   "p": "on",
+   "t": "Git na prática e fluxo de testes",
+   "tags": [
+    "T"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Curso de Git e GitHub: clone, commit, push, pull e merge.",
+    "Leitura da documentação sobre levantamento de cenários, padrão de log e classificação de erros."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-06",
+   "p": "on",
+   "t": "Fim do onboarding e primeira OS",
+   "tags": [
+    "T",
+    "R"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Onboarding de testes concluído com os artefatos de uma OS antiga como exemplo.",
+    "Marina (tech lead de qualidade) mostrou uma OS no Jira; escrevi cenários de teste e apresentei as soluções em videochamada."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-07",
+   "p": "cu",
+   "t": "Primeira OS: UFVS 12",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Analisei o documento da OS 12 da UFVS, de customização do Portal Acadêmico.",
+    "Reunião com Marina sobre a OS e os fluxos do Jira; recebi o template padrão de log de validação."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-08",
+   "p": "cu",
+   "t": "Tarefa 1 da UFVS 12",
+   "tags": [
+    "V",
+    "B"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Validei a tarefa 1 da UFVS 12 conforme a documentação e registrei o log com evidências no Jira.",
+    "Recebi um login de perfil discente para as próximas tarefas."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [
+    "Ambiente de testes fora do ar até as 09h30."
+   ],
+   "prox": []
+  },
+  {
+   "d": "2026-10-09",
+   "p": "cu",
+   "t": "Tarefas 2 e 3: quatro erros de layout",
+   "tags": [
+    "V",
+    "M",
+    "W"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Executei os cenários das tarefas 2 e 3 da UFVS 12 e devolvi a tarefa 3 para desenvolvimento.",
+    "Validei a tarefa 2 da UFVS 12.",
+    "Workshop interno sobre uso de IA para produtividade."
+   ],
+   "err": [
+    "Legenda do ícone de campo obrigatório ausente em duas telas.",
+    "Frase de confirmação diferente da especificada no documento.",
+    "Campo marcado como obrigatório que deveria ser opcional.",
+    "Número de matrícula negativo aceito no cadastro."
+   ],
+   "mel": [
+    "Padronizar a legenda de campo obrigatório em todas as telas de cadastro."
+   ],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-12",
+   "p": "cu",
+   "t": "Cenários em BDD com agente de IA",
+   "tags": [
+    "V",
+    "T"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Gerei cenários em BDD para a tarefa 4 da UFVS 12 com um agente de IA e revisei um a um antes de executar.",
+    "Incluí dois cenários que o agente não cobriu: usuário sem vínculo ativo e data retroativa.",
+    "Validei a tarefa 4 da UFVS 12."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-13",
+   "p": "cu",
+   "t": "Consultas no banco para massa de dados",
+   "tags": [
+    "V",
+    "T"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Videochamada com Rafael (analista de QA) sobre consultas em PostgreSQL com o DBeaver.",
+    "Montei consultas SQL para localizar alunos com matrícula trancada e usar como massa de dados.",
+    "Validei a tarefa 5 da UFVS 12."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-14",
+   "p": "cu",
+   "t": "Revalidação e pré-produção",
+   "tags": [
+    "V"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Na revalidação da tarefa 3 da UFVS 12, devolvi de novo para desenvolvimento, com evidências.",
+    "Comparei o comportamento no ambiente de pré-produção, onde o erro não ocorria."
+   ],
+   "err": [
+    "Cadastro aceito com o campo de documento em branco."
+   ],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-15",
+   "p": "cu",
+   "t": "Review da sprint",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "12"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Review do primeiro bloco da sprint: Bruno apresentou as tarefas 1 a 5 da UFVS 12.",
+    "Validei a tarefa 3 da UFVS 12 após a correção."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-16",
+   "p": "cu",
+   "t": "Nova OS: UESM 27",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "27"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Li o pré-orçamento da OS 27 da UESM, que envolve integração por API e rotinas agendadas.",
+    "Planning com o Squad Cometa e divisão das tarefas de validação."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-19",
+   "p": "cu",
+   "t": "Automação com Cypress",
+   "tags": [
+    "V",
+    "T"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "27"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Abri chamado para instalar o Node.js e o Cypress; ambos instalados sem problemas.",
+    "No tempo livre, automatizei com Cypress uma tela de cadastro, usando gerador de CPF para a massa de dados.",
+    "Executei os cenários 1 a 4 da tarefa 1 da UESM 27."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-20",
+   "p": "cu",
+   "t": "Tarefas 1 e 2 da UESM 27",
+   "tags": [
+    "V",
+    "M"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "27"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Validei a tarefa 1 da UESM 27.",
+    "Validei a tarefa 2 da UESM 27 depois que Bruno explicou o cálculo do percentual de carga horária."
+   ],
+   "err": [],
+   "mel": [
+    "Exibir o percentual de integralização com duas casas decimais, como no histórico."
+   ],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-21",
+   "p": "cu",
+   "t": "Cenário fora do escopo e formação em IA",
+   "tags": [
+    "V",
+    "T",
+    "M"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "27"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Sugeri um cenário sobre histórico parcial, não previsto no pré-orçamento da UESM 27; foi aceito e executado.",
+    "Sem demandas liberadas à tarde, estudei Engenharia de Prompt na plataforma de cursos da empresa."
+   ],
+   "err": [],
+   "mel": [
+    "Incluir o histórico parcial nos cenários padrão de emissão de documentos."
+   ],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-22",
+   "p": "cu",
+   "t": "Retrospectiva da UESM 27",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "27"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Validei a tarefa 3 da UESM 27.",
+    "Retrospectiva da OS com o Squad Cometa: pontos fortes, atrasos e ações para a próxima sprint."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-23",
+   "p": "im",
+   "t": "Mudança para o time de implantação",
+   "tags": [
+    "I",
+    "R",
+    "A"
+   ],
+   "os": [],
+   "nums": {},
+   "sq": [],
+   "txt": [
+    "Lívia me transferiu para o time de implantação, por falta de demandas em customização.",
+    "Primeira daily do time; Caio (estagiário) explicou o fluxo das atividades e as métricas no Jira."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-26",
+   "p": "im",
+   "t": "Guia de implantação da UFPN",
+   "tags": [
+    "I"
+   ],
+   "os": [
+    "UFPN"
+   ],
+   "nums": {
+    "UFPN": "8"
+   },
+   "sq": [
+    "Squad Delta"
+   ],
+   "txt": [
+    "Revalidei itens do guia de implantação do módulo de Assistência Estudantil na UFPN.",
+    "Abri minha primeira tarefa no Jira para o time de implantação."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-27",
+   "p": "im",
+   "t": "Template de tarefas em Markdown",
+   "tags": [
+    "I",
+    "M",
+    "B"
+   ],
+   "os": [
+    "UFPN"
+   ],
+   "nums": {
+    "UFPN": "8"
+   },
+   "sq": [
+    "Squad Delta"
+   ],
+   "txt": [
+    "Criei um template em Markdown para abertura de tarefas no Jira (cliente, ambiente, passos e evidências), adotado também por Caio.",
+    "Validei mais 14 itens do guia da UFPN."
+   ],
+   "err": [],
+   "mel": [
+    "Usar o template de tarefas como padrão do time de implantação."
+   ],
+   "pend": [
+    "Ambiente de implantação lento durante a manhã."
+   ],
+   "prox": []
+  },
+  {
+   "d": "2026-10-28",
+   "p": "im",
+   "t": "Guia coberto: 64 itens",
+   "tags": [
+    "I"
+   ],
+   "os": [
+    "UFPN"
+   ],
+   "nums": {
+    "UFPN": "8"
+   },
+   "sq": [
+    "Squad Delta"
+   ],
+   "txt": [
+    "Cobrimos os 64 itens do guia da UFPN: 38 validados, 17 em andamento por falta de massa de dados e 9 sem caso de uso implementado.",
+    "Montei um documento auxiliar com o status de cada item para a Teresa (líder de implantação)."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-10-29",
+   "p": "im",
+   "t": "Casos de uso fora do documento",
+   "tags": [
+    "I",
+    "M"
+   ],
+   "os": [
+    "UFPN"
+   ],
+   "nums": {
+    "UFPN": "8"
+   },
+   "sq": [
+    "Squad Delta"
+   ],
+   "txt": [
+    "Incluí no guia o caso de uso \"Confirmar presença em entrevista\", que não estava no documento original.",
+    "Abri tarefa sobre o cabeçalho do comprovante."
+   ],
+   "err": [
+    "Comprovante gerado com o nome de outra instituição no cabeçalho."
+   ],
+   "mel": [
+    "Adicionar ao guia um fluxo de Administração com os perfis de gestor."
+   ],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-02",
+   "p": "im",
+   "t": "Nova implantação: UERA",
+   "tags": [
+    "I",
+    "R"
+   ],
+   "os": [
+    "UERA"
+   ],
+   "nums": {
+    "UERA": "3"
+   },
+   "sq": [
+    "Squad Boreal"
+   ],
+   "txt": [
+    "Nova OS de implantação do módulo de Extensão na UERA.",
+    "Passei a manhã entendendo os fluxos do módulo: documentação, tarefas de validação e ambiente."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-03",
+   "p": "im",
+   "t": "Pareceres não previstos",
+   "tags": [
+    "I",
+    "V"
+   ],
+   "os": [
+    "UERA"
+   ],
+   "nums": {
+    "UERA": "3"
+   },
+   "sq": [
+    "Squad Boreal"
+   ],
+   "txt": [
+    "Criei cenários adicionais para os pareceres autorizado, não autorizado, pendente e devolvido, que o pré-orçamento não cobria.",
+    "Incluí no guia a descrição do perfil de gestor de bolsas de extensão."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-04",
+   "p": "im",
+   "t": "Retrospectiva da implantação",
+   "tags": [
+    "R"
+   ],
+   "os": [
+    "UERA"
+   ],
+   "nums": {
+    "UERA": "3"
+   },
+   "sq": [
+    "Squad Boreal"
+   ],
+   "txt": [
+    "Usei um resumo gerado por IA, a partir do meu último registro, para apresentar a daily.",
+    "Retrospectiva preenchida e discutida em chamada; Teresa elogiou a rapidez das validações."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-05",
+   "p": "cu",
+   "t": "De volta à customização: UFVS 15",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "15"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Voltei para a customização e fui alocada na OS 15 da UFVS.",
+    "Escrevi os cenários das tarefas 1 e 2 a partir do documento de requisitos."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-06",
+   "p": "cu",
+   "t": "Tarefas 1 e 2 da UFVS 15",
+   "tags": [
+    "V"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "15"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Validei a tarefa 1 da UFVS 15.",
+    "Validei a tarefa 2 da UFVS 15, com projetos de ensino e de monitoria, nos modos manual e automático."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-09",
+   "p": "cu",
+   "t": "Duplicidade encontrada no review",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UFVS"
+   ],
+   "nums": {
+    "UFVS": "15"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "No review, Otávio encontrou um identificador duplicado sendo aceito; incluí o cenário na minha suíte.",
+    "Validei a tarefa 3 da UFVS 15 após a correção."
+   ],
+   "err": [
+    "Identificador de currículo duplicado aceito no cadastro de docente."
+   ],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-10",
+   "p": "cu",
+   "t": "Workshop e início da UESM 31",
+   "tags": [
+    "V",
+    "W"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "31"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Workshop: desenvolver software com IA.",
+    "Li o pré-orçamento da OS 31 da UESM e escrevi os cenários das tarefas 1 a 3."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-11",
+   "p": "cu",
+   "t": "Tarefas 1 a 3 da UESM 31",
+   "tags": [
+    "V",
+    "M"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "31"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Validei a tarefa 1 da UESM 31.",
+    "Validei a tarefa 2 da UESM 31.",
+    "Validei a tarefa 3 da UESM 31, com observações de texto."
+   ],
+   "err": [
+    "Uso de \"CPF's\" no título de dois relatórios."
+   ],
+   "mel": [
+    "Revisar a grafia dos títulos dos relatórios antes da entrega ao cliente."
+   ],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-12",
+   "p": "cu",
+   "t": "Ambiente fora do ar",
+   "tags": [
+    "V",
+    "B"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "31"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Escrevi os cenários das tarefas 4 e 5 da UESM 31 enquanto o ambiente não voltava.",
+    "Atualizei o roadmap pessoal com as entregas da semana."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [
+    "Ambiente de homologação fora do ar durante toda a manhã."
+   ],
+   "prox": []
+  },
+  {
+   "d": "2026-11-13",
+   "p": "cu",
+   "t": "Tarefas 4 e 5 da UESM 31",
+   "tags": [
+    "V"
+   ],
+   "os": [
+    "UESM"
+   ],
+   "nums": {
+    "UESM": "31"
+   },
+   "sq": [
+    "Squad Cometa"
+   ],
+   "txt": [
+    "Validei a tarefa 4 da UESM 31.",
+    "Validei a tarefa 5 da UESM 31 e fechei o log da OS."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-16",
+   "p": "cu",
+   "t": "Planejamento da UECV 5",
+   "tags": [
+    "V",
+    "R"
+   ],
+   "os": [
+    "UFVS",
+    "UECV"
+   ],
+   "nums": {
+    "UFVS": "15",
+    "UECV": "5"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Fui incluída na OS 5 da UECV e participei do planejamento.",
+    "Validei a tarefa 4 da UFVS 15."
+   ],
+   "err": [],
+   "mel": [],
+   "pend": [],
+   "prox": []
+  },
+  {
+   "d": "2026-11-17",
+   "p": "cu",
+   "t": "Tarefa 5 da UFVS 15 e cenários da UECV 5",
+   "tags": [
+    "V",
+    "M"
+   ],
+   "os": [
+    "UFVS",
+    "UECV"
+   ],
+   "nums": {
+    "UFVS": "15",
+    "UECV": "5"
+   },
+   "sq": [
+    "Squad Atlas"
+   ],
+   "txt": [
+    "Validei a tarefa 5 da UFVS 15, com uma observação sobre o título de um relatório.",
+    "Escrevi os cenários das tarefas 1 e 2 da UECV 5 e deixei o log pré-pronto."
+   ],
+   "err": [
+    "Título do relatório de convocados aparece como o do quantitativo por cota."
+   ],
+   "mel": [
+    "Separar em campos distintos as vagas reservadas e os componentes curriculares."
+   ],
+   "pend": [
+    "Aguardando resposta do cliente sobre as abas da tarefa 2 da UECV 5."
+   ],
+   "prox": [
+    "Executar os cenários da tarefa 1 da UECV 5.",
+    "Revalidar a tarefa 5 da UFVS 15 após o ajuste do título."
+   ]
+  }
+ ]
+}
